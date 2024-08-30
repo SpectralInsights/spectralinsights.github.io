@@ -1,1 +1,0 @@
-# spectralinsights.github.io
