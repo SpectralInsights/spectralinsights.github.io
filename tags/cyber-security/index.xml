@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cyber Security on Spectral Insight blog</title>
+    <link>https://localhost:1313/tags/cyber-security/</link>
+    <description>Recent content in Cyber Security on Spectral Insight blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/tags/cyber-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Cyber Security</title>
+      <link>https://localhost:1313/posts/cyber-security/introduction-to-cyber-security/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost:1313/posts/cyber-security/introduction-to-cyber-security/</guid>
+      
+      <description>A Comprehensive Guide to Jumpstart Your Journey in Cyber Security: Penetration Testing, Programming, and Bug Bounty Hunting Introduction Welcome to the exciting world of cyber security, where every keystroke counts and every line of code could be your key to unlocking the secrets of digital fortresses. Whether you’re a novice intrigued by the idea of ethical hacking or an aspiring cyber warrior ready to dive deep into the realms of penetration testing, programming, and bug bounty hunting, this comprehensive guide is tailored just for you.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

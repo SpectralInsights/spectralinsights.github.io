@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Version Control | Spectral Insight blog</title>
+<meta property="og:title" content="Version Control | Spectral Insight blog" />
+<meta name="twitter:title" content="Version Control | Spectral Insight blog" />
+<meta itemprop="name" content="Version Control | Spectral Insight blog" />
+<meta name="application-name" content="Version Control | Spectral Insight blog" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2024-08-30T00:00:00Z />
+    <meta property="article:published_time" content=2024-08-30T00:00:00Z />
+    <meta property="og:url" content="https://localhost:1313/posts/programming/git/version-control/" />
+
+    
+    <meta property="og:article:author" content="Spectral Insights" />
+    <meta property="article:author" content="Spectral Insights" />
+    <meta name="author" content="Spectral Insights" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Version Control",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2024-08-30",
+        "description": "",
+        "wordCount":  547 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2024-08-30",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Spectral Insight blog"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.122.0">
+
+    
+    <meta property="og:title" content="Version Control" />
+<meta property="og:description" content="Git Basics Understanding Version Control Systems (VCS)
+A Version Control System (VCS) tracks changes to files over time, enabling multiple people to collaborate on projects and allowing you to revert to previous versions if needed. Git is one of the most popular VCSs, known for its distributed nature and efficiency in managing code changes.
+Initializing a Git Repository
+To start tracking a project with Git, you need to initialize a repository." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://localhost:1313/posts/programming/git/version-control/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-08-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-08-30T00:00:00+00:00" />
+
+
+
+    
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Version Control"/>
+<meta name="twitter:description" content="Git Basics Understanding Version Control Systems (VCS)
+A Version Control System (VCS) tracks changes to files over time, enabling multiple people to collaborate on projects and allowing you to revert to previous versions if needed. Git is one of the most popular VCSs, known for its distributed nature and efficiency in managing code changes.
+Initializing a Git Repository
+To start tracking a project with Git, you need to initialize a repository."/>
+
+
+    
+    <link rel="icon" type="image/png+xml" href="/icons/logo32.png">
+
+    <link rel="canonical" href="https://localhost:1313/posts/programming/git/version-control/">
+    <link href="/style.min.2aab69fc5e6e5f18a5c8d30976abcba2ec7913c196290b3e684ba0e378c279dc.css" rel="stylesheet">
+    <link href="/code-highlight.min.bbcb7bf126e6cdbb6ae2eef62f827012be787d2d3c47dc835fcab9b0fcdf6d84.css" rel="stylesheet">
+
+    
+    <link rel="icon" type="image/png+xml" href="/icons/logo32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/logo32.png">
+    
+
+
+
+
+<link rel="manifest" href="https://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#cccccc">
+
+    
+    <link rel="icon" type="image/png"  sizes="32x32" href="/icons/logo32.png">
+
+</head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/tags/">
+                        Tags
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Version Control</h1>
+                
+                
+                <div class="post-meta">
+                    <time datetime="2024-08-30T00:00:00&#43;00:00" itemprop="datePublished"> Aug 30, 2024 </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b></b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git-basics"><strong>Git Basics</strong></a></li>
+        <li><a href="#working-with-github"><strong>Working with GitHub</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <h3 id="git-basics"><strong>Git Basics</strong></h3>
+<ul>
+<li>
+<p><strong>Understanding Version Control Systems (VCS)</strong><br>
+A Version Control System (VCS) tracks changes to files over time, enabling multiple people to collaborate on projects and allowing you to revert to previous versions if needed. Git is one of the most popular VCSs, known for its distributed nature and efficiency in managing code changes.</p>
+</li>
+<li>
+<p><strong>Initializing a Git Repository</strong><br>
+To start tracking a project with Git, you need to initialize a repository.</p>
+<p><strong>Example</strong>:</p>
+<pre tabindex="0"><code># Navigate to your project directory
+cd my-project
+
+# Initialize a Git repository
+git init
+
+# This creates a hidden .git directory in your project folder, where Git stores the version history.
+</code></pre></li>
+<li>
+<p><strong>Basic Git Commands</strong></p>
+<ul>
+<li>
+<p><strong><code>git add</code></strong>: Stages changes (files or directories) to be committed.</p>
+<pre tabindex="0"><code># Stage a specific file
+git add filename.py
+
+# Stage all changes in the directory
+git add .
+</code></pre></li>
+<li>
+<p><strong><code>git commit</code></strong>: Records the staged changes in the repository&rsquo;s history.</p>
+<pre tabindex="0"><code># Commit with a message describing the changes
+git commit -m &#34;Initial commit&#34;
+</code></pre></li>
+<li>
+<p><strong><code>git push</code></strong>: Uploads your local repository changes to a remote repository (like GitHub).</p>
+<pre tabindex="0"><code># Push changes to the remote repository (usually &#39;origin&#39;) on the &#39;main&#39; branch
+git push origin main
+</code></pre></li>
+<li>
+<p><strong><code>git pull</code></strong>: Fetches and integrates changes from a remote repository into your local repository.</p>
+<pre tabindex="0"><code># Pull the latest changes from the remote repository
+git pull origin main
+</code></pre></li>
+<li>
+<p><strong><code>git merge</code></strong>: Combines changes from different branches into one.</p>
+<pre tabindex="0"><code># Merge the &#39;feature&#39; branch into the current branch
+git merge feature
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="working-with-github"><strong>Working with GitHub</strong></h3>
+<ul>
+<li>
+<p><strong>Creating and Cloning Repositories</strong><br>
+GitHub is a cloud-based platform that hosts Git repositories and enables collaboration on open-source and private projects.</p>
+<ul>
+<li>
+<p><strong>Creating a Repository on GitHub</strong>:</p>
+<ol>
+<li>Log in to your GitHub account.</li>
+<li>Click on &ldquo;New&rdquo; to create a new repository.</li>
+<li>Name your repository and optionally add a description.</li>
+<li>Choose between public or private visibility.</li>
+<li>Click &ldquo;Create repository&rdquo;.</li>
+</ol>
+</li>
+<li>
+<p><strong>Cloning a Repository</strong>:</p>
+<pre tabindex="0"><code># Clone a repository to your local machine
+git clone https://github.com/username/repository.git
+
+# This will create a directory named &#39;repository&#39; with the project files.
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Pull Requests and Code Reviews</strong><br>
+A pull request (PR) is a method of submitting contributions to a project. Other team members can review the changes before merging them into the main codebase.</p>
+<p><strong>Creating a Pull Request</strong>:</p>
+<ol>
+<li>Push your changes to a branch on GitHub.</li>
+<li>Navigate to the repository on GitHub.</li>
+<li>Click the &ldquo;Compare &amp; pull request&rdquo; button.</li>
+<li>Review your changes and add comments if necessary.</li>
+<li>Click &ldquo;Create pull request&rdquo;.</li>
+</ol>
+<p><strong>Code Reviews</strong>:</p>
+<ul>
+<li>Code reviews involve team members examining the PR to ensure quality, spot bugs, and suggest improvements before the changes are merged.</li>
+</ul>
+</li>
+<li>
+<p><strong>Managing Branches and Resolving Conflicts</strong><br>
+Branches in Git allow you to work on different features or fixes independently of the main codebase.</p>
+<ul>
+<li>
+<p><strong>Creating a Branch</strong>:</p>
+<pre tabindex="0"><code># Create and switch to a new branch named &#39;feature-branch&#39;
+git checkout -b feature-branch
+</code></pre></li>
+<li>
+<p><strong>Switching Between Branches</strong>:</p>
+<pre tabindex="0"><code># Switch back to the &#39;main&#39; branch
+git checkout main
+</code></pre></li>
+<li>
+<p><strong>Resolving Conflicts</strong>:<br>
+Conflicts occur when two branches have changes to the same part of a file. Git will stop the merge and mark the conflict in the file.</p>
+<p><strong>Steps to Resolve a Conflict</strong>:</p>
+<ol>
+<li>Open the file with conflicts and decide which changes to keep.</li>
+<li>Edit the file to resolve the conflicts.</li>
+<li>Stage the resolved file with <code>git add</code>.</li>
+<li>Commit the changes with <code>git commit</code>.</li>
+</ol>
+<p><strong>Example</strong>:</p>
+<pre tabindex="0"><code># After resolving the conflict
+git add conflicted_file.py
+git commit -m &#34;Resolved merge conflict in conflicted_file.py&#34;
+</code></pre></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        
+        Spectral Insights
+        
+    </small>
+</footer><a href="#" title="" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+
+
+    
+    <script src="https://localhost:1313/js/main.min.35f435a5d8eac613c52daa28d8af544a4512337d3e95236e4a4978417b8dcb2f.js" integrity="sha256-NfQ1pdjqxhPFLaoo2K9USkUSM30&#43;lSNuSkl4QXuNyy8="></script>
+
+    
+
+</body>
+</html>
