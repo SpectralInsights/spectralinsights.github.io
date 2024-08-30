@@ -1,8 +1,8 @@
 {
     "name": "Spectral Insight blog",
     "short_name": "Spectral Insight blog",
-    "start_url": "https://localhost:1313/",
-    "theme_color": "#434648",
+    "start_url": "https://spectralinsights.github.io/",
+    "theme_color": "#000000",
     "background_color": "#ffffff",
     "display": "standalone",
     "icons": [

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Spectral Insight blog</title>
-    <link>https://localhost:1313/posts/</link>
+    <link>https://spectralinsights.github.io/posts/</link>
     <description>Recent content in Posts on Spectral Insight blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://spectralinsights.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing and Debugging</title>
-      <link>https://localhost:1313/posts/programming/python/testing-and-debugging/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/testing-and-debugging/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/testing-and-debugging/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/testing-and-debugging/</guid>
       
       <description>Unit Testing Writing Test Cases Using unittest and pytest
 Unit testing involves writing test cases to verify that individual parts of your code (functions, methods, etc.) work as expected.
@@ -23,10 +23,10 @@ import unittest def add(a, b): return a + b class TestMathFunctions(unittest.Tes
     
     <item>
       <title>Version Control</title>
-      <link>https://localhost:1313/posts/programming/git/version-control/</link>
+      <link>https://spectralinsights.github.io/posts/programming/git/version-control/</link>
       <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/git/version-control/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/git/version-control/</guid>
       
       <description>Git Basics Understanding Version Control Systems (VCS)
 A Version Control System (VCS) tracks changes to files over time, enabling multiple people to collaborate on projects and allowing you to revert to previous versions if needed. Git is one of the most popular VCSs, known for its distributed nature and efficiency in managing code changes.
@@ -37,10 +37,10 @@ To start tracking a project with Git, you need to initialize a repository.</desc
     
     <item>
       <title>Advanced Python Concepts</title>
-      <link>https://localhost:1313/posts/programming/python/advanced-python-concepts/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/advanced-python-concepts/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/advanced-python-concepts/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/advanced-python-concepts/</guid>
       
       <description>Decorators Decorators are a way to modify or extend the behavior of functions or classes without changing their code.
 Function Decorators
@@ -52,10 +52,10 @@ def my_decorator(func): def wrapper(): print(&amp;#34;Something is happening bef
     
     <item>
       <title>Advanced Tools and Best Practices</title>
-      <link>https://localhost:1313/posts/programming/python/advanced-tools-and-best-practices/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/advanced-tools-and-best-practices/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/advanced-tools-and-best-practices/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/advanced-tools-and-best-practices/</guid>
       
       <description>Virtual Environments Creating and Managing Virtual Environments with venv and virtualenv
 Virtual environments allow you to create isolated Python environments for different projects, ensuring that dependencies do not conflict.
@@ -67,10 +67,10 @@ Using venv (built-in):
     
     <item>
       <title>Data Structures in Python</title>
-      <link>https://localhost:1313/posts/programming/python/data-structures/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/data-structures/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/data-structures/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/data-structures/</guid>
       
       <description>Lists Lists are ordered collections of items which can be of different types.
 Creating Lists
@@ -84,10 +84,10 @@ You can extract a part of a list by slicing it.</description>
     
     <item>
       <title>Error Handling and Exceptions</title>
-      <link>https://localhost:1313/posts/programming/python/error-handling/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/error-handling/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/error-handling/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/error-handling/</guid>
       
       <description>Understanding Exceptions Exceptions are errors that occur during the execution of a program. Understanding common exceptions can help you handle errors more effectively.
 Common Exceptions: IndexError: Raised when trying to access an element from a list using an index that is out of range.
@@ -97,10 +97,10 @@ my_list = [1, 2, 3] item = my_list[5] # Raises IndexError KeyError: Raised when 
     
     <item>
       <title>File Handling</title>
-      <link>https://localhost:1313/posts/programming/python/file-handling/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/file-handling/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/file-handling/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/file-handling/</guid>
       
       <description>Reading and Writing Files Python provides built-in functions and methods to work with files, allowing you to read from and write to them.
 Opening Files
@@ -112,10 +112,10 @@ Modes:
     
     <item>
       <title>Functions and Modules</title>
-      <link>https://localhost:1313/posts/programming/python/functions-and-modules/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/functions-and-modules/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/functions-and-modules/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/functions-and-modules/</guid>
       
       <description>Functions Functions are blocks of reusable code that perform a specific task.
 Defining Functions
@@ -128,10 +128,10 @@ def add(a, b): return a + b result = add(3, 5) # result is 8 Default Arguments</
     
     <item>
       <title>Introduction to Cyber Security</title>
-      <link>https://localhost:1313/posts/cyber-security/introduction-to-cyber-security/</link>
+      <link>https://spectralinsights.github.io/posts/cyber-security/introduction-to-cyber-security/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/cyber-security/introduction-to-cyber-security/</guid>
+      <guid>https://spectralinsights.github.io/posts/cyber-security/introduction-to-cyber-security/</guid>
       
       <description>A Comprehensive Guide to Jumpstart Your Journey in Cyber Security: Penetration Testing, Programming, and Bug Bounty Hunting Introduction Welcome to the exciting world of cyber security, where every keystroke counts and every line of code could be your key to unlocking the secrets of digital fortresses. Whether you’re a novice intrigued by the idea of ethical hacking or an aspiring cyber warrior ready to dive deep into the realms of penetration testing, programming, and bug bounty hunting, this comprehensive guide is tailored just for you.</description>
       
@@ -139,10 +139,10 @@ def add(a, b): return a + b result = add(3, 5) # result is 8 Default Arguments</
     
     <item>
       <title>Introduction to Python</title>
-      <link>https://localhost:1313/posts/programming/python/introduction/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/introduction/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/introduction/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/introduction/</guid>
       
       <description>Python Roadmap: From Zero to Hero &amp;amp; Production Code 1. Python Basics Python Setup Install Python (latest version) Set up a development environment (VS Code, PyCharm, or Jupyter Notebook) Basic Syntax and Data Types Variables and data types: int, float, str, bool Input/Output operations: input(), print() Operators Arithmetic operators: +, -, *, /, //, %, ** Comparison operators: ==, !=, &amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;= Logical operators: and, or, not Control Structures Conditional statements: if, elif, else Loops: for, while Loop control: break, continue, pass 2.</description>
       
@@ -150,10 +150,10 @@ def add(a, b): return a + b result = add(3, 5) # result is 8 Default Arguments</
     
     <item>
       <title>Object-Oriented Programming (OOP)</title>
-      <link>https://localhost:1313/posts/programming/python/object-oriented-programming/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/object-oriented-programming/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/object-oriented-programming/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/object-oriented-programming/</guid>
       
       <description>Classes and Objects Classes and objects are fundamental concepts in OOP. A class defines a blueprint for creating objects, while an object is an instance of a class.
 Defining Classes and Creating Objects
@@ -165,10 +165,10 @@ class Dog: def __init__(self, name, age): self.name = name self.age = age def ba
     
     <item>
       <title>Python Basics</title>
-      <link>https://localhost:1313/posts/programming/python/python-basics/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/python-basics/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/python-basics/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/python-basics/</guid>
       
       <description>Python Setup Before you start coding in Python, you need to install Python on your computer and set up a development environment.
 Install Python
@@ -181,10 +181,10 @@ VS Code: A lightweight code editor with rich Python support.</description>
     
     <item>
       <title>Web Development with Python</title>
-      <link>https://localhost:1313/posts/programming/python/web-development-with-python/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/web-development-with-python/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/web-development-with-python/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/web-development-with-python/</guid>
       
       <description>Introduction to Web Frameworks Understanding Web Frameworks
 Web frameworks simplify the process of building web applications by providing a structure and tools for common web development tasks.
@@ -194,10 +194,10 @@ Flask: A lightweight, micro-framework that gives you the flexibility to structur
     
     <item>
       <title>Working with Databases</title>
-      <link>https://localhost:1313/posts/programming/python/working-with-databases/</link>
+      <link>https://spectralinsights.github.io/posts/programming/python/working-with-databases/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost:1313/posts/programming/python/working-with-databases/</guid>
+      <guid>https://spectralinsights.github.io/posts/programming/python/working-with-databases/</guid>
       
       <description>SQL Basics Understanding SQL and Databases
 SQL (Structured Query Language) is used to interact with relational databases. A database is a collection of structured data that can be easily accessed, managed, and updated.
